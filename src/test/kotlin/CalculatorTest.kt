@@ -28,4 +28,9 @@ class CalculatorTest {
         assertEquals(1, calculator.divide(3, 3))
         assertEquals(4, calculator.divide(16, 4))
     }
+    @Test
+    fun shouldCalculateCrazyCount() {
+        val calculator = Calculator()
+        assertEquals(12, calculator.crazyCount(3, 5, c = 4, d = 2))
+    }
 }
