@@ -3,6 +3,10 @@ plugins {
     kotlin("jvm") version "1.9.23" // Use a compatible Kotlin version
 }
 
+kotlin {
+    jvmToolchain(21)
+}
+
 repositories {
     mavenCentral()
 }
