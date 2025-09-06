@@ -33,4 +33,16 @@ class CalculatorTest {
         val calculator = Calculator()
         assertEquals(12, calculator.crazyCount(3, 5, c = 4, d = 2))
     }
+    @Test
+    fun shouldCalculateFibonacci() {
+        val calculator = Calculator()
+        assertEquals(2, calculator.fibonacci( a = 20))
+    }
+    @Test
+    fun print() {
+        val calculator = Calculator()
+        for (i in 0L..100L) {
+            println("$i -> ${calculator.fibonacci(i)}")
+        }
+    }
 }
